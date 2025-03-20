@@ -34,13 +34,13 @@ body {
     position: relative;
 }
 
-.accordion .content-container .question::after {
+.question::after {
     content: '+';
     position: absolute;
     right: -5px;
 }
 
-.accordion .content-container .answer {
+.answer {
     padding-top: 15px;
     font-size: 22px;
     line-height: 1.5;
@@ -51,6 +51,10 @@ body {
     transition: .5s;
 }
 
-.accordion .content-container .active .answer {
+.active .answer {
     height: 150px;
+}
+
+.active .question {
+    font-size: 18px;
 }
